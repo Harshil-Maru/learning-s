@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2e;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #27293d;
+}
+
+h3{
+    margin-left: auto;
+    color: red;
+    font-size: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.status {
+    margin-left: 20px;
+    padding: 5px 10px;
+    background-color: #4caf50;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.info {
+    margin-left: auto;
+    font-size: 14px;
+}
+
+.nav-tabs {
+    display: flex;
+    justify-content: start;
+    padding: 10px 20px;
+    background-color: #343850;
+}
+
+.nav-tabs a {
+    text-decoration: none;
+    color: #9fa2b2;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.nav-tabs a.active {
+    color: #ffffff;
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card   {
+    flex: 1;
+    background-color: #2a2e45;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    font-size: 16px;
+    border: 2px solid transparent;
+}
+
+.card.active.pop-on-hover:hover {
+    background: orange;
+    box-shadow: 0 0 100px rgba(255, 152, 0, 0.9);
+    border-color: orange;
+}
+
+.icon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+@-webkit-keyframes pop-on-hover {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+  @keyframes pop-on-hover {
+    50% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  .pop-on-hover {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .pop-on-hover:hover, .pop-on-hover:focus, .pop-on-hover:active {
+    -webkit-animation-name: pop-on-hover;
+    animation-name: pop-on-hover;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+  a:link, a:visited {
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+  }
